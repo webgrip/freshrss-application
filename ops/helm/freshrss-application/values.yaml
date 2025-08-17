@@ -10,6 +10,12 @@ freshrss:
     tag: latest
     pullPolicy: Always
 
+  service:
+    main:
+      ports:
+        http:
+          port: 80
+
   ingress:
     main:
       enabled: true
@@ -25,7 +31,12 @@ freshrss:
       hosts:
         - host: *hostname
           paths:
-            - "/"
+            - path: /
+              pathType: Prefix
+              service:
+                name: freshrss-application
+                port:
+                  number: 80
       tls:
         - secretName: letsencrypt-freshrss-application
           hosts:
