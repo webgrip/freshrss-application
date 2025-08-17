@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/webgrip/freshrss-application/compare/1.1.1...1.1.2) (2025-08-17)
+
+
+### Bug Fixes
+
+* Don't do anything weird with security ([db34042](https://github.com/webgrip/freshrss-application/commit/db34042bd3a01e0da32a95b64561cf5889974b4c))
+
 ## [1.1.1](https://github.com/webgrip/freshrss-application/compare/1.1.0...1.1.1) (2025-08-17)
 
 
