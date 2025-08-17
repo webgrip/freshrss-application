@@ -1,3 +1,10 @@
+## [1.0.4](https://github.com/webgrip/freshrss-application/compare/1.0.3...1.0.4) (2025-08-17)
+
+
+### Bug Fixes
+
+* removed superfluous annotation ([fe92e48](https://github.com/webgrip/freshrss-application/commit/fe92e480f96941a7abf6dba94716f9f9842826f8))
+
 ## [1.0.3](https://github.com/webgrip/freshrss-application/compare/1.0.2...1.0.3) (2025-08-17)
 
 
