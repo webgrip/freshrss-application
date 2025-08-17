@@ -35,8 +35,7 @@ freshrss:
               pathType: Prefix
               service:
                 name: freshrss-application
-                port:
-                  number: 80
+                port: 80
       tls:
         - secretName: letsencrypt-freshrss-application
           hosts:
