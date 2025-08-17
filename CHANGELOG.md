@@ -1,3 +1,10 @@
+# [1.1.0](https://github.com/webgrip/freshrss-application/compare/1.0.6...1.1.0) (2025-08-17)
+
+
+### Features
+
+* Moved to new helm template chart for freshrss deployment ([7201e96](https://github.com/webgrip/freshrss-application/commit/7201e9636146d109177cad3838c79fcf8900d36a))
+
 ## [1.0.6](https://github.com/webgrip/freshrss-application/compare/1.0.5...1.0.6) (2025-08-17)
 
 
