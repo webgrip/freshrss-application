@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/webgrip/freshrss-application/compare/1.0.1...1.0.2) (2025-08-17)
+
+
+### Bug Fixes
+
+* fixed helm template values to adhere to required standards ([b781622](https://github.com/webgrip/freshrss-application/commit/b7816222a91e8ba252daa2e30e746aabe79c6d2f))
+
 ## [1.0.1](https://github.com/webgrip/freshrss-application/compare/1.0.0...1.0.1) (2025-08-17)
 
 
