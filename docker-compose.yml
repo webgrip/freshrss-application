@@ -80,7 +80,6 @@ services:
         max-size: 10m
     volumes:
       - freshrss-application-freshrss-application-data:/var/www/FreshRSS/data
-      - freshrss-application-freshrss-application-extensions:/var/www/FreshRSS/extensions
     ports:
       - "127.0.0.1:8080:80"
     environment:
@@ -146,7 +145,6 @@ services:
 
 volumes:
   freshrss-application-freshrss-application-data:
-  freshrss-application-freshrss-application-extensions:
 
   freshrss-application-freshrss-postgres-data:
 

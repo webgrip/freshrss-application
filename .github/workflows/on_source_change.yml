@@ -53,8 +53,8 @@ jobs:
       docker-context: '.'
       docker-file: './ops/docker/application/Dockerfile'
       docker-tags: |
-        webgrip/freshrss-application:latest
-        webgrip/freshrss-application:${{ needs.release.outputs.version }}
+        ${{github.repository_owner}}/${{ github.event.repository.name }}:latest
+        ${{github.repository_owner}}/${{ github.event.repository.name }}:${{ needs.release.outputs.version }}
 
   deploy-application:
     name: 'Deploy'
