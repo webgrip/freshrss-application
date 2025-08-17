@@ -13,12 +13,12 @@ freshrss:
     tag: latest
     pullPolicy: Always
 
-  # securityContext:
-  #   container:
-  #     readOnlyRootFilesystem: false
-  #     runAsNonRoot: false
-  #     runAsUser: 0
-  #     runAsGroup: 0
+  securityContext:
+    container:
+      readOnlyRootFilesystem: false
+      runAsNonRoot: false
+      runAsUser: 0
+      runAsGroup: 0
 
   service:
     main:
