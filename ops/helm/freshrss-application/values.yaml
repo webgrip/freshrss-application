@@ -71,3 +71,4 @@ freshrss:
       tls:
         - secretName: letsencrypt-freshrss-application
           hosts: [*hostname]
+
