@@ -39,8 +39,8 @@ freshrss:
         containers:
           main:
             env:
-              BASE_URL: *url           # example app env
-              CRON_MIN: "*/20"         # example app env
+              BASE_URL: *url
+              CRON_MIN: "1,11,21,31,41,51"
             fixedEnv:
               TZ: "Europe/Amsterdam"   # preferred place for TZ if you want it per-container
             # envFrom:                  # optional: import all keys from a Secret/ConfigMap
