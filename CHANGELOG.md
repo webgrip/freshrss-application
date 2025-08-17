@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/webgrip/freshrss-application/compare/1.0.0...1.0.1) (2025-08-17)
+
+
+### Bug Fixes
+
+* fix freshrss helm deployment ([5a8d12a](https://github.com/webgrip/freshrss-application/commit/5a8d12abe05dda4ce5f9bae158e1659ae44684c3))
+
 # 1.0.0 (2025-08-17)
 
 
