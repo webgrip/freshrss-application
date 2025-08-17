@@ -1,0 +1,27 @@
+namespace: freshrss-application
+
+_shared_config:
+  hostname: &hostname freshrss-application.staging.k8s.webgrip.nl
+  url: &url https://freshrss-application.staging.k8s.webgrip.nl
+
+application:
+  enabled: true
+  image:
+    repository: webgrip/freshrss-application
+    tag: latest
+    pullPolicy: Always
+
+  ingress:
+    enabled: true
+    className: ingress-traefik
+    annotations:
+      cert-manager.io/cluster-issuer: letsencrypt-traefik
+#      traefik.ingress.kubernetes.io/router.middlewares: "ingress-traefik-ryan-basic-auth@kubernetescrd"
+    hosts:
+      - host: *hostname
+        paths:
+          - "/"
+    tls:
+      - secretName: letsencrypt-freshrss-application
+        hosts:
+          - *hostname

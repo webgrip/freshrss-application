@@ -1,0 +1,71 @@
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: freshrss-application-system
+  namespace: webgrip
+  title: freshrss-application System
+  description: |
+    News aggregation and bias analysis platform.
+  labels:
+    tier: "3"
+  annotations:
+    github.com/project-slug: webgrip/freshrss-application
+    backstage.io/adr-location: docs/adrs
+    backstage.io/techdocs-ref: dir:./docs/techdocs
+    simpleicons.org/icon-slug: newspaper
+  tags:
+    - freshrss-application
+  links:
+    - url: https://freshrss-application.webgrip.test/
+      title: Development URL
+      icon: dashboard
+      type: website
+    - url: https://freshrss-application.staging.k8s.webgrip.nl/
+      title: Staging URL
+      icon: dashboard
+      type: website
+    - url: https://github.com/webgrip/freshrss-application
+      title: Source Code
+      icon: github
+      type: source
+spec:
+  owner: group:webgrip/infrastructure
+  domain: webgrip/operations-domain
+  type: product
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: freshrss-application
+  namespace: webgrip
+  title: freshrss-application
+  description: |
+    News aggregation and bias analysis platform.
+  labels:
+    tier: "3"
+  annotations:
+    github.com/project-slug: webgrip/freshrss-application
+    backstage.io/techdocs-ref: dir:./docs/techdocs
+    simpleicons.org/icon-slug: newspaper
+  tags:
+    - news
+    - analysis
+    - python
+  links:
+    - url: https://freshrss-application.webgrip.test/
+      title: Development URL
+      icon: dashboard
+      type: website
+    - url: https://freshrss-application.staging.k8s.webgrip.nl/
+      title: Staging URL
+      icon: dashboard
+      type: website
+    - url: https://github.com/webgrip/freshrss-application
+      title: Source Code
+      icon: github
+      type: source
+spec:
+  type: service
+  lifecycle: development
+  owner: group:webgrip/infrastructure
+  system: freshrss-application-system
