@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/webgrip/freshrss-application/compare/1.1.0...1.1.1) (2025-08-17)
+
+
+### Bug Fixes
+
+* deploy ([be4c35f](https://github.com/webgrip/freshrss-application/commit/be4c35fa9f523ab0fc78c25765fb70f70719763c))
+
 # [1.1.0](https://github.com/webgrip/freshrss-application/compare/1.0.6...1.1.0) (2025-08-17)
 
 
