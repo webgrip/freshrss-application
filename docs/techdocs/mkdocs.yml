@@ -30,7 +30,6 @@ nav:
   - Home: index.md
   - Architecture: architecture.md
   - Dependencies: dependencies.md
-  - News-Please Config: news-please-config.md
   - Future Work: future-work.md
   - Planned Features: planned_features.md
 
@@ -50,7 +49,6 @@ plugins:
 
 markdown_extensions:
   - markdown_inline_mermaid
-  - markdown_inline_graphviz
 
 extra:
   analytics:
