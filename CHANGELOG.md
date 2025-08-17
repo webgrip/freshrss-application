@@ -1,3 +1,10 @@
+## [1.0.3](https://github.com/webgrip/freshrss-application/compare/1.0.2...1.0.3) (2025-08-17)
+
+
+### Bug Fixes
+
+* port should be an int ([e7d9630](https://github.com/webgrip/freshrss-application/commit/e7d9630a915bc78dacfea3824859e92a450f38a1))
+
 ## [1.0.2](https://github.com/webgrip/freshrss-application/compare/1.0.1...1.0.2) (2025-08-17)
 
 
