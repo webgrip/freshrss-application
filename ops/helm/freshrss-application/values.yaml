@@ -45,4 +45,4 @@ freshrss:
     TZ: Europe/Amsterdam
     PUID: "568"
     PGID: "568"
-    CRON_MINUTE: "2,17,32,47"
+    CRON_MINUTE: "1,11,21,31,41,51"
