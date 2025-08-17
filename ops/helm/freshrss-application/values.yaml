@@ -5,44 +5,69 @@ _shared_config:
   url: &url https://freshrss-application.staging.k8s.webgrip.nl
 
 freshrss:
+  # Global/common-level options for this subchart
+  TZ: Europe/Amsterdam  # (optional) chart-wide TZ; you can also set TZ via fixedEnv below
+
   image:
     repository: webgrip/freshrss-application
     tag: latest
     pullPolicy: Always
 
+  securityContext:
+    container:
+      readOnlyRootFilesystem: false
+      runAsNonRoot: false
+      runAsUser: 0
+      runAsGroup: 0
+
   service:
     main:
       ports:
-        http:
+        main:
           port: 80
+          targetPort: 80
+
+  persistence:
+    config:
+      enabled: true
+      mountPath: /config
+
+  # Put your env here
+  workload:
+    main:
+      podSpec:
+        containers:
+          main:
+            env:
+              BASE_URL: *url           # example app env
+              CRON_MIN: "*/20"         # example app env
+            fixedEnv:
+              TZ: "Europe/Amsterdam"   # preferred place for TZ if you want it per-container
+            # envFrom:                  # optional: import all keys from a Secret/ConfigMap
+            #   - secretRef:
+            #       name: freshrss-env
+            #       expandObjectName: false
 
   ingress:
     main:
       enabled: true
       primary: true
-      annotations:
-        cert-manager.io/cluster-issuer: letsencrypt-traefik
-  #      traefik.ingress.kubernetes.io/router.middlewares: "ingress-traefik-ryan-basic-auth@kubernetescrd"
+      required: true
       labels:
         app.kubernetes.io/name: freshrss-application
         app.kubernetes.io/instance: freshrss-application
+      annotations:
+        cert-manager.io/cluster-issuer: letsencrypt-traefik
       ingressClassName: ingress-traefik
       hosts:
         - host: *hostname
           paths:
             - path: /
               pathType: Prefix
-              service:
-                name: freshrss-application
-                port: 80
+              # optional: only if you need to target a non-primary service/port explicitly
+              # overrideService:
+              #   name: main
+              #   port: 10010
       tls:
         - secretName: letsencrypt-freshrss-application
-          hosts:
-            - *hostname
-      
-  # https://github.com/linuxserver/docker-freshrss#parameters
-  env:
-    TZ: Europe/Amsterdam
-    PUID: "568"
-    PGID: "568"
-    CRON_MINUTE: "1,11,21,31,41,51"
+          hosts: [*hostname]

@@ -9,5 +9,5 @@ dependencies:
     repository: oci://ghcr.io/webgrip/common-charts
     version: 1.0.13
   - name: freshrss
-    repository: https://k8s-home-lab.github.io/helm-charts/
-    version: 7.0.1
+    repository: oci://tccr.io/truecharts
+    version: 21.3.1

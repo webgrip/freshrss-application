@@ -3,7 +3,7 @@ dependencies:
   repository: oci://ghcr.io/webgrip/common-charts
   version: 1.0.13
 - name: freshrss
-  repository: https://k8s-home-lab.github.io/helm-charts/
-  version: 7.0.1
-digest: sha256:78b2cd01efda0a65f1993e1d7ea75ee70bf2b9cc43fa823f5f9cfdaac2be7d84
-generated: "2025-08-17T20:56:55.74384305+02:00"
+  repository: oci://tccr.io/truecharts
+  version: 21.3.1
+digest: sha256:dc05946e8fa8e1fd64dbed61ca7560a261accd955b69596d5e33be853dd6ce00
+generated: "2025-08-17T22:21:53.301783107+02:00"
