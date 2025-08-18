@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/webgrip/freshrss-application/compare/1.1.8...1.2.0) (2025-08-18)
+
+
+### Features
+
+* Use linuxserver/freshrss to build webgrip/freshrss ([d768022](https://github.com/webgrip/freshrss-application/commit/d768022bd16e2f3836e772f8bca28950dbc1c13e))
+
 ## [1.1.8](https://github.com/webgrip/freshrss-application/compare/1.1.7...1.1.8) (2025-08-18)
 
 
