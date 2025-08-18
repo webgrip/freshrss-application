@@ -1,3 +1,10 @@
+## [1.2.4](https://github.com/webgrip/freshrss-application/compare/1.2.3...1.2.4) (2025-08-18)
+
+
+### Bug Fixes
+
+* removed files ([a2c31f4](https://github.com/webgrip/freshrss-application/commit/a2c31f45af74af2ecef9792a46b432e133478579))
+
 ## [1.2.3](https://github.com/webgrip/freshrss-application/compare/1.2.2...1.2.3) (2025-08-18)
 
 
