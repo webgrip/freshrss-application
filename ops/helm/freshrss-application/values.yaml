@@ -35,6 +35,7 @@ freshrss:
       targetSelectAll: true
       storageClass: "do-block-storage"
       size: 10Gi
+      volumeName: pvc-ecd27273-a8c1-47af-a7d4-d43ccf93b0b4
 
 
   # Put your env here
