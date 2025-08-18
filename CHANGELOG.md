@@ -1,3 +1,10 @@
+## [1.2.3](https://github.com/webgrip/freshrss-application/compare/1.2.2...1.2.3) (2025-08-18)
+
+
+### Bug Fixes
+
+* Try to deploy with a specific dynamic pvc with do block storage and a smaller size ([f52954f](https://github.com/webgrip/freshrss-application/commit/f52954f7899806b3278c35c1a7e39a9cea44b925))
+
 ## [1.2.2](https://github.com/webgrip/freshrss-application/compare/1.2.1...1.2.2) (2025-08-18)
 
 
