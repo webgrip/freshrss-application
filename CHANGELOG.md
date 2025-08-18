@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/webgrip/freshrss-application/compare/1.1.6...1.1.7) (2025-08-18)
+
+
+### Bug Fixes
+
+* use the official image instead of the one I built myself ([56d6789](https://github.com/webgrip/freshrss-application/commit/56d6789b1c4b810508b5fadfd36bbbdf78e65056))
+
 ## [1.1.6](https://github.com/webgrip/freshrss-application/compare/1.1.5...1.1.6) (2025-08-17)
 
 
