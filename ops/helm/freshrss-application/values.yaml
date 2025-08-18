@@ -31,6 +31,10 @@ freshrss:
     config:
       enabled: true
       mountPath: /config
+      type: pvc
+      targetSelectAll: true
+      storageClass: "do-block-storage"
+      size: 10Gi
 
   # Put your env here
   workload:
