@@ -36,6 +36,7 @@ freshrss:
       storageClass: "do-block-storage"
       size: 10Gi
 
+
   # Put your env here
   workload:
     main:
