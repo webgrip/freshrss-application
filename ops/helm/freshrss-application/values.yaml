@@ -48,7 +48,6 @@ freshrss:
             #       name: freshrss-env
             #       expandObjectName: false
 
-
   ingress:
     main:
       enabled: true
