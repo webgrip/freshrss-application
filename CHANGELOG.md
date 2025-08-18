@@ -1,3 +1,10 @@
+## [1.1.8](https://github.com/webgrip/freshrss-application/compare/1.1.7...1.1.8) (2025-08-18)
+
+
+### Bug Fixes
+
+* redeploy to test persistence ([aaf6a83](https://github.com/webgrip/freshrss-application/commit/aaf6a83605a6520baf4d1096b386bec2e3c95322))
+
 ## [1.1.7](https://github.com/webgrip/freshrss-application/compare/1.1.6...1.1.7) (2025-08-18)
 
 
