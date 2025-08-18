@@ -9,8 +9,10 @@ freshrss:
   TZ: Europe/Amsterdam  # (optional) chart-wide TZ; you can also set TZ via fixedEnv below
 
   image:
-    repository: webgrip/freshrss-application
-    tag: latest
+    # repository: webgrip/freshrss-application
+    repository: ghcr.io/linuxserver/freshrss
+    # tag: latest
+    tag: 1.26.3-ls277
     pullPolicy: Always
 
   securityContext:
