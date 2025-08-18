@@ -1,3 +1,10 @@
+## [1.2.6](https://github.com/webgrip/freshrss-application/compare/1.2.5...1.2.6) (2025-08-18)
+
+
+### Bug Fixes
+
+* deploy with the volume name ([ba001d5](https://github.com/webgrip/freshrss-application/commit/ba001d50b80defd7f12b072836c3e22c4b8dd952))
+
 ## [1.2.5](https://github.com/webgrip/freshrss-application/compare/1.2.4...1.2.5) (2025-08-18)
 
 
