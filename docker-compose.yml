@@ -83,6 +83,8 @@ services:
     ports:
       - "127.0.0.1:8080:80"
     environment:
+      UID: 1000
+      GID: 1000
       TZ: Europe/Amsterdam
       CRON_MIN: '2,32'
       FRESHRSS_ENV: development
