@@ -81,7 +81,7 @@ services:
     volumes:
       - freshrss-application-freshrss-application-data:/var/www/FreshRSS/data
     ports:
-      - "127.0.0.1:8080:80"
+      - "127.0.0.1:8081:80"
     environment:
       UID: 1000
       GID: 1000
