@@ -30,3 +30,9 @@ development team.
 - [FreshRSS](https://freshrss.org/) – self‑hosted RSS reader
 - [PostgreSQL](https://www.postgresql.org/) – persistent storage
 - Docker Compose – container orchestration
+
+
+##### Possible next extensions:
+https://framagit.org/nicofrand/xextension-threepanesview
+https://github.com/tryallthethings/freshvibes?tab=readme-ov-file
+https://github.com/giventofly/freshrss-comicsinfeed
