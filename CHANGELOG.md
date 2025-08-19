@@ -1,3 +1,10 @@
+## [1.2.7](https://github.com/webgrip/freshrss-application/compare/1.2.6...1.2.7) (2025-08-19)
+
+
+### Bug Fixes
+
+* fixing extensions ([7e40053](https://github.com/webgrip/freshrss-application/commit/7e400536e1e23a272bd721d00df0e1840cce5f23))
+
 ## [1.2.6](https://github.com/webgrip/freshrss-application/compare/1.2.5...1.2.6) (2025-08-18)
 
 
