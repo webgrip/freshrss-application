@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/webgrip/freshrss-application/compare/1.2.7...1.3.0) (2025-08-19)
+
+
+### Features
+
+* Added a bunch of new extentions ([8ff6016](https://github.com/webgrip/freshrss-application/commit/8ff60162a4cde5ccf16a40134ee5bc57b6bf3fc8))
+
 ## [1.2.7](https://github.com/webgrip/freshrss-application/compare/1.2.6...1.2.7) (2025-08-19)
 
 
