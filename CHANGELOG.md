@@ -1,3 +1,15 @@
+# [1.4.0](https://github.com/webgrip/freshrss-application/compare/1.3.0...1.4.0) (2025-08-26)
+
+
+### Bug Fixes
+
+* added license ([2e5560c](https://github.com/webgrip/freshrss-application/commit/2e5560caf4214111130083f3db8648eb00f102dd))
+
+
+### Features
+
+* added resource limits ([b32f05e](https://github.com/webgrip/freshrss-application/commit/b32f05e020ba8b32e0905321dd535e53f10eb459))
+
 # [1.3.0](https://github.com/webgrip/freshrss-application/compare/1.2.7...1.3.0) (2025-08-19)
 
 
