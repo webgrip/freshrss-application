@@ -6,12 +6,20 @@ _shared_config:
 
 freshrss:
   # Global/common-level options for this subchart
-  TZ: Europe/Amsterdam  # (optional) chart-wide TZ; you can also set TZ via fixedEnv below
+  TZ: Europe/Amsterdam # (optional) chart-wide TZ; you can also set TZ via fixedEnv below
 
   image:
     repository: webgrip/freshrss-application
     tag: latest
     pullPolicy: Always
+
+  resources:
+    limits:
+      cpu: 500m
+      memory: 512Mi
+    requests:
+      cpu: 250m
+      memory: 256Mi
 
   securityContext:
     container:
@@ -37,7 +45,6 @@ freshrss:
       size: 10Gi
       volumeName: pvc-ecd27273-a8c1-47af-a7d4-d43ccf93b0b4
 
-
   # Put your env here
   workload:
     main:
@@ -48,7 +55,7 @@ freshrss:
               BASE_URL: *url
               CRON_MIN: "1,11,21,31,41,51"
             fixedEnv:
-              TZ: "Europe/Amsterdam"   # preferred place for TZ if you want it per-container
+              TZ: "Europe/Amsterdam" # preferred place for TZ if you want it per-container
             # envFrom:                  # optional: import all keys from a Secret/ConfigMap
             #   - secretRef:
             #       name: freshrss-env
