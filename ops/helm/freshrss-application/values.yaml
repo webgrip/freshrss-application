@@ -10,7 +10,7 @@ freshrss:
 
   image:
     repository: webgrip/freshrss-application
-    tag: latest
+    tag: latest@sha256:ebf7c07d1f53f3d460379462f512b0d5fd6e35c1746372860b6fda5638af1a13
     pullPolicy: Always
 
   resources:
