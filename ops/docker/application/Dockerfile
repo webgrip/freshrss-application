@@ -1,4 +1,4 @@
-FROM ghcr.io/linuxserver/freshrss:1.26.3-ls277
+FROM ghcr.io/linuxserver/freshrss:1.26.3-ls277@sha256:956682095c65d891ef4d85736ce6dbaf562710fa1210aeb7c2415898022b4cae
 
 COPY ops/docker/application/extensions/ /config/www/freshrss/extensions
 

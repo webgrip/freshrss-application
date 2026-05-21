@@ -3,7 +3,7 @@ version: '3'
 services:
   
   mariadb:    
-    image: mariadb 
+    image: mariadb@sha256:350261292d0129fd4b24f537dcf05ecd3ebe34d39d5b592af551f38310e7a167 
     restart: always
     volumes:
       - /data/freshrss/maria:/var/lib/mysql
@@ -15,7 +15,7 @@ services:
 
       
   freshrss:
-    image: freshrss/freshrss:edge
+    image: freshrss/freshrss:edge@sha256:9b326342745c622c3a5f0e8cbd6e05a87d44228b59351477d01bfea02de6a169
     restart: unless-stopped
     ports:
       - 127.0.0.1:8083:80
@@ -30,15 +30,15 @@ services:
       - read:read
 
   read:
-    image: phpdockerio/readability-js-server
+    image: phpdockerio/readability-js-server@sha256:ea8354b4260098117a99dd75df5b5a36c8390c979a334cc5328016f23ff28c8e
     restart: always
 
   merc:
-    image: wangqiru/mercury-parser-api
+    image: wangqiru/mercury-parser-api@sha256:db5f7f6d3997a7697aef924494f005c1142c6f404d9eb91b8c1a95e4e6e60405
     restart: always
 
   fivefilters:
-    image: "heussd/fivefilters-full-text-rss:latest"
+    image: "heussd/fivefilters-full-text-rss:latest@sha256:411fe54daf761168e4276248444e0380079773e8dc8a2e29e8594eb85fc9ce70"
     environment:
       # Leave empty to disable admin section
       - FTR_ADMIN_PASSWORD=

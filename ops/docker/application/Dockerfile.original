@@ -1,4 +1,4 @@
-FROM freshrss/freshrss:edge-alpine
+FROM freshrss/freshrss:edge-alpine@sha256:57a3943f9815f862bdb237399e97ebd1e50c3865934e4d1ce2f4df051c9fd24d
 
 COPY ops/docker/application/extensions/ /var/www/FreshRSS/extensions/
 
