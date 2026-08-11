@@ -4,8 +4,6 @@ site_description: ''
 theme:
   name: 'material'
   custom_dir: overrides
-  analytics:
-    gtag: G-FAKE
   features:
     - search.suggest
     - search.highlight
@@ -35,6 +33,9 @@ nav:
 
 # https://www.mkdocs.org/user-guide/configuration
 plugins:
+  # Agent affordances (homelab rfc-docs-platform-2026): /llms.txt + /llms-full.txt
+  # + per-page raw .md, grafted into the Zensical site by the deploy leg.
+  - llms-source
   - techdocs-core:
       use_material_search: true
   - search:
@@ -53,7 +54,7 @@ markdown_extensions:
 extra:
   analytics:
     provider: custom
-    property: G-FAKE
+    property: G-XXXXXXXXXX
     feedback:
       title: Was this page helpful?
       ratings:
