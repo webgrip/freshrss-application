@@ -33,7 +33,9 @@ jobs:
     needs: generate-documentation
     if: github.ref == 'refs/heads/main'
     with:
-      dest-prefix: freshrss-application
+      # Own bucket (estate #2): this repo's key can touch nothing but
+      # docs-freshrss-application(-trash), so a bad sync can never clobber the estate.
+      bucket: docs-freshrss-application
       # strict:false until this repo's links are cleaned; flip like homelab did.
       strict: 'true'
     secrets:
